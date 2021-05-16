@@ -1,0 +1,40 @@
+.SearchBar-container{
+  margin-right: 4vw;
+  position: relative;
+  margin-top: 8px;
+  img{
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    right: 16.5vw;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  input{
+    margin-right: 10px;
+    width: 15vw;
+    height: 40px;
+    border: solid 1px black;
+    border-radius: 25px;
+    padding-left: 48px;
+  }
+}
+
+@media screen and (max-width: 960px){
+  .SearchBar-container{
+    img{
+      right: 52vw;
+    }
+    input{
+      width: 50vw;
+      padding-left: 30px;
+    }
+  }
+}
+@media screen and (max-width: 600px){
+  .SearchBar-container{
+    img{
+      right: 54vw;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+@import "../../../_constants/style.constants";
+
+.details-left-container{
+  float:left;
+  width:77vw;
+  height: 90vh;
+  position: relative;
+  a{
+    color: $secondary;
+  }
+  .details-character{
+    width:70vw;
+    height: 40vh;
+    h1{
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+  .details-comics{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(10, minmax(15vw, 1fr));
+    .details-comics-image{
+      width: 10vw;
+      height: auto;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+@media screen and (max-width: 960px){
+  .details-character{
+    height: 30vh !important;
+  }
+  .details-comics{
+    grid-template-columns: repeat(10, minmax(25vw, 1fr)) !important;
+    .details-comics-image{
+      width: 20vw !important;
+    }
+  }
+}
+
+@media screen and (max-width: 600px){
+  .details-character{
+    width: 100vw !important;
+  }
+}

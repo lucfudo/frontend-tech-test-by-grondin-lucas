@@ -1,0 +1,30 @@
+@import "_constants/style.constants";
+
+*{
+  margin: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  monospace;
+}
+
+@import "App/index.scss";
+
+@import "_components/Header/index.scss";
+@import "_components/Header/SearchField/index.scss";
+
+@import "_components/HomeContent/index.scss";
+@import "_components/HomeContent/ItemOfCharactersList/index.scss";
+@import "_components/HomeContent/MoreCharacters/index.scss";
+
+@import "_components/DetailsContent/RightContent/index.scss";
+@import "_components/DetailsContent/LeftContent/index.scss";

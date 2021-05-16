@@ -1,0 +1,22 @@
+@import "../../_constants/style.constants";
+
+.AppBar-container {
+  z-index:10;
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: $primary;
+
+  img{
+    margin-left: 4vw;
+    position: absolute;
+    width: 120px;
+  }
+
+  div{
+    align-self: flex-end;
+  }
+}
